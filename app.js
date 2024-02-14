@@ -15,7 +15,7 @@ function verificarIntento(){
    if(numeroDeUsuario === numeroSecreto){
       asignarTextoElemento('p',`Acertaste el numero secreto!, en ${intentos} ${intentos === 1 ? 'intento': 'intentos'}`)
 document.getElementById('reiniciar').removeAttribute('disabled');  
-      asignarTextoElemento('h1','Profe esta expo merece 5.0');
+      asignarTextoElemento('h1','Profe esta expo merece 5.0 <3');
    }else{
       if(numeroDeUsuario > numeroSecreto){
          asignarTextoElemento('p','El número secreto es menor');
@@ -24,9 +24,9 @@ document.getElementById('reiniciar').removeAttribute('disabled');
       }
       intentos++;
       if(intentos>maxIntentos){
-         asignarTextoElemento('p','No Acertaste el número secreto :(, ahora tienes que responder una pregunta, you can bro');
+         asignarTextoElemento('p','No acertaste el número secreto :(, ahora tienes que responder una pregunta, you can bro');
          document.getElementById('reiniciar').removeAttribute('disabled');  
-         asignarTextoElemento('h1','Profe esta expo merece 5.0');
+         asignarTextoElemento('h1','Profe esta expo merece 5.0 <3');
       }
       limpiarCaja();
    }
